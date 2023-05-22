@@ -19,8 +19,8 @@ pipeline {
             steps {
                 withSonarQubeEnv ('sonarqube-server')
                 sh 'mvn sonar:sonar'
+                }
             }
-            }
-        }
         }
     }
+    
