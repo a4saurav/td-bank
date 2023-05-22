@@ -10,7 +10,7 @@ pipeline {
                 }
             }
             stage ('upload war file to nexus') {
-                step {
+                steps {
                 nexusArtifactUploader artifacts: [
                     [
                         artifactId: 'td-bank',
