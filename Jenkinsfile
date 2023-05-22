@@ -9,6 +9,7 @@ pipeline {
                     sh script: 'mvn clean package'
                 }
             }
+<<<<<<< HEAD
             stage ('upload war file to nexus') {
                 step {
                 nexusArtifactUploader artifacts: [
@@ -26,3 +27,21 @@ pipeline {
         }
     }
 }
+=======
+        }
+        stage ('build') {
+            steps {
+                sh 'mvn clean package'
+            
+            }
+        }
+        stage ('sonarqube analysis') {
+            steps {
+                withSonarQubeEnv ('sonarqube-server')
+                sh 'mvn sonar:sonar'
+                }
+            }
+        }
+    }
+    
+>>>>>>> bd6f258a213528ea25628ecfa1d52fd10c8a9032
