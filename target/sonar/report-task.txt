@@ -1,0 +1,6 @@
+projectKey=td-bank
+serverUrl=http://4.240.81.189:9000
+serverVersion=10.0.0.68432
+dashboardUrl=http://4.240.81.189:9000/dashboard?id=td-bank
+ceTaskId=AYhBMz9kXG3QN16NxmVw
+ceTaskUrl=http://4.240.81.189:9000/api/ce/task?id=AYhBMz9kXG3QN16NxmVw
