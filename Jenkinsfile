@@ -18,9 +18,9 @@ pipeline {
                         file: 'target/td-bank-0.0.1-SNAPSHOT.jar', 
                         type: 'jar']
                     ],
-                    credentialsId: 'nexus', groupId: 'com.tcs', 
+                    credentialsId: 'nexus3', groupId: 'com.tcs', 
                     nexusUrl: '20.55.6.188:8081', nexusVersion: 'nexus3', 
-                    protocol: 'http', repository: 'http://20.55.6.188:8081/repository/maven-project/', 
+                    protocol: 'http', repository: 'maven-project', 
                     version: '0.0.1-SNAPSHOT'
             }
         }
